@@ -1,3 +1,8 @@
-"use strict"
+"use strict";
 
-const hamburger = document.querySelector("")
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector("nav");
+
+hamburger.addEventListener("click", function () {
+  nav.classList.toggle("active");
+});
