@@ -47,7 +47,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   font-family: var(--Barlow), sans-serif;
-  font-size: 18px;
+  font-size: 16.5px;
 }
 
 .header_content {
@@ -209,6 +209,7 @@ main {
 .photography_context {
   position: absolute;
   top: 50%;
+  padding: max(10vh, 2em) 1rem;
 }
 
 .graphic_design_context {
@@ -371,19 +372,6 @@ footer {
     width: min(100%, 27em);
     margin: 0 auto;
     padding: 1rem;
-  }
-
-  .graphic_design_context,
-  .photography_context {
-    width: 100%;
-    padding: 0;
-    top: 55%;
-  }
-
-  .graphic_design_text_container,
-  .photography_text_container {
-    width: 400px;
-    margin: 0 auto;
   }
 
   .client_info {
