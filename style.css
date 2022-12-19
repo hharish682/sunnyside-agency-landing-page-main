@@ -368,7 +368,7 @@ footer {
   .transform_brand_context,
   .stand_out_context {
     text-align: left;
-    width: max(10%, 400px);
+    width: min(100%, 27em);
     margin: 0 auto;
     padding: 1rem;
   }
