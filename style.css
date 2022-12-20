@@ -237,9 +237,9 @@ main {
 }
 
 .client_info {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 4rem;
+  grid-template-columns: 1fr;
 }
 
 .client img {
@@ -375,13 +375,17 @@ footer {
   }
 
   .client_info {
-    flex-direction: row;
-    gap: 1rem;
-    justify-content: center;
+    height: auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .client {
-    flex-basis: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between;
   }
 
   .gallery {
