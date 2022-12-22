@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+
 *,
 *::after,
 *::before {
@@ -47,20 +48,20 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   font-family: var(--Barlow), sans-serif;
-  font-size: 16.5px;
+  font-size: 16px;
 }
 
 header {
-  height: 75vh;
-  background-image: url(/images/mobile/image-header.jpg);
+  /* min-height: 90vh; */
+  /* background-image: url(/images/mobile/image-header.jpg);
   background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
+  background-position: center;
+  background-size: cover; */
 }
 
-.header_image {
-  display: none;
-}
+/* .header_image {
+  display: block;
+} */
 
 .header_content {
   background-color: #3ebfff;
@@ -73,7 +74,7 @@ header {
 
 nav {
   position: absolute;
-  top: 150%;
+  top: 140%;
   left: 1.8rem;
   right: 1.8rem;
   background-color: var(--White);
@@ -111,10 +112,6 @@ nav::before {
   border-left: 30px solid transparent;
   border-bottom: 30px solid var(--White);
 }
-
-/* .active {
-  transform: translateX(0);
-} */
 
 .hamburger {
   opacity: 0.5;
@@ -223,8 +220,11 @@ main {
 .graphic_design_context,
 .photography_context {
   position: absolute;
-  top: 50%;
-  padding: max(10vh, 2em) 1rem;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 0.5rem;
 }
 
 .graphic_design_context {
@@ -238,6 +238,7 @@ main {
 .photography_text {
   line-height: 1.5;
 }
+
 .client_testimonials_container {
   padding: 4rem 2.25rem;
 }
@@ -332,7 +333,7 @@ footer {
   }
 
   body {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   nav {
@@ -386,16 +387,17 @@ footer {
     grid-row: 1;
   }
 
-  .primary_heading {
-    width: 325px;
-  }
-
   .transform_brand_context,
   .stand_out_context {
     text-align: left;
-    width: min(100%, 27em);
-    margin: 0 auto;
-    padding: 1rem;
+    width: min(100%, 30rem);
+    margin: auto;
+    padding: 0 2.5rem;
+  }
+
+  .graphic_design_context,
+  .photography_context {
+    width: 350px;
   }
 
   .client_info {
