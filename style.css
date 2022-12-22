@@ -59,9 +59,9 @@ header {
   background-size: cover; */
 }
 
-/* .header_image {
-  display: block;
-} */
+.header_image {
+  display: none;
+}
 
 .header_content {
   background-color: #3ebfff;
