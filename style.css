@@ -147,7 +147,6 @@ nav::before {
 }
 
 .arrow {
-  max-width: 100% !important;
   position: absolute;
   display: inline;
   top: 46.5%;
@@ -290,14 +289,17 @@ main {
 
 footer {
   background-color: var(--Dark_moderate_cyan);
-  padding: 4rem 0;
+  padding: 2rem 0;
   text-align: center;
 }
 
-.footer_logo img {
+.footer_logo {
   display: inline;
   margin-bottom: 2rem;
+  filter: invert(27%) sepia(46%) saturate(411%) hue-rotate(116deg)
+    brightness(56%) contrast(97%);
 }
+
 .footer_links a {
   text-decoration: none;
   padding: 0 1.5rem;
