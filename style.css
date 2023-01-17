@@ -53,7 +53,7 @@ body {
 
 header {
   height: 90vh;
-  background-image: url(/images/mobile/image-header.jpg);
+  background-image: url(./images/mobile/image-header.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -297,13 +297,25 @@ footer {
   display: inline;
   margin-bottom: 2rem;
   filter: invert(27%) sepia(46%) saturate(411%) hue-rotate(116deg)
-    brightness(56%) contrast(97%);
+    brightness(50%) contrast(97%);
+}
+
+.footer_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--Dark_desaturated_cyan);
 }
 
 .footer_links a {
   text-decoration: none;
-  padding: 0 1.5rem;
+  margin: 0 1rem;
   color: var(--Dark_desaturated_cyan);
+  transition: color 300ms;
+}
+
+.footer_links a:hover {
+  color: var(--White);
 }
 
 .footer_links {
@@ -313,6 +325,12 @@ footer {
 .social_media img {
   display: inline;
   padding: 0 1rem;
+}
+
+.social_media img:hover {
+  color: var(--White);
+  cursor: pointer;
+  filter: brightness(100%);
 }
 
 .social_media {
